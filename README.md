@@ -73,7 +73,7 @@ The simulation replicates the **UrbanV2X** sensor platform deployed at the Hong 
 ### Scene 1: Construction Work
 
 <p align="center">
-  <img src="figures/scene1.png" alt="Scene 1" width="700"/>
+  <img src="https://github.com/user-attachments/assets/4b4b7502-6ff5-4c1c-aaa4-344f2646ba96" alt="Scene 1" width="700"/>
 </p>
 
 - **Change type:** Additions only
