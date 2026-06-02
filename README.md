@@ -1,7 +1,7 @@
 # HD Map Update Datasets
 
 <p align="center">
-  <img src="figures/framework.png" alt="Framework Overview" width="800"/>
+  <img src="https://github.com/user-attachments/assets/66d83fe7-4e06-4b6f-a090-41814a341dd3" alt="Framework Overview" width="800"/>
 </p>
 
 This repository provides the CARLA simulation dataset used in the following paper:
