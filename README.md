@@ -49,7 +49,7 @@ HD_MAP_UPDATE_DATASETS/
 The simulation replicates the **UrbanV2X** sensor platform deployed at the Hong Kong Science and Technology Park (HKSTP).
 
 <p align="center">
-  <img src="figures/sensor_setup.png" alt="Sensor Setup" width="600"/>
+  <img src="https://github.com/user-attachments/assets/efa7e28d-c1fb-438a-baf2-351154e52f5a" alt="Sensor Setup" width="600"/>
 </p>
 
 ### Infrastructure Side (Roadside Unit)
