@@ -64,7 +64,6 @@ How the folders map to each scenario:
 | `roadside_0923/data_clear` | Roadside baseline | Roadside new scan |
 | `roadside_0923/data_with_obs` | Roadside new scan | Roadside baseline |
 
-> ⚠️ **Scene 2 data will be released in a future update.**
 
 ---
 
@@ -161,7 +160,7 @@ ROS bag files are hosted on Dropbox. **Scene 1** data is currently available; Sc
 | Folder | Link |
 |--------|------|
 | `east_clear` (vehicle baseline) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/ADD4xqLr306Vho1kG_TQJWo/HKSTP_data/east_clear?rlkey=k5jiool8uhs1lwjgpp66x4do3&dl=0) |
-| `east_construction` (vehicle new scan) |Coming soon |
+| `east_construction` (vehicle new scan) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/AJ-jhg8O74q09lJT1mzu__g/HKSTP_data/east_construction?dl=0&rlkey=k5jiool8uhs1lwjgpp66x4do3&subfolder_nav_tracking=1) |
 | `roadside_0923/data_clear` (roadside baseline) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/ANzVOIm-X24Skz8WH8bzKZU/HKSTP_data/roadside_0923/data_clear?rlkey=k5jiool8uhs1lwjgpp66x4do3&dl=0) |
 | `roadside_0923/data_with_obs` (roadside new scan) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/AHo5j5SzHVYLJHjS4y54CIw/HKSTP_data/roadside_0923/data_with_obs?rlkey=k5jiool8uhs1lwjgpp66x4do3&dl=0) |
 
