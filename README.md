@@ -84,7 +84,7 @@ The simulation replicates the **UrbanV2X** sensor platform deployed at the Hong 
 ### Scene 2: Post-Construction Restoration
 
 <p align="center">
-  <img src="figures/scene2.png" alt="Scene 2" width="700"/>
+  <img src="https://github.com/user-attachments/assets/02a93365-0bde-4836-9ddf-46aadbf9cbde" alt="Scene 2" width="700"/>
 </p>
 
 - **Change type:** Bidirectional (additions + deletions)
