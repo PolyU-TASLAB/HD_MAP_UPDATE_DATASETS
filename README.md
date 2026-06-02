@@ -26,21 +26,45 @@ The dataset contains two components:
 
 ## Repository Structure
 
+Each scenario uses two recordings — one with clear road conditions and one with construction obstacles — shared across both scenes with swapped roles.
+
 ```
 HD_MAP_UPDATE_DATASETS/
-├── carla/
-│   ├── scene1_construction/        # Scene 1: Construction work added
-│   │   ├── infrastructure/         # Roadside LiDAR & camera data
-│   │   ├── vehicle/                # Onboard LiDAR & camera data
-│   │   ├── baseline_map/           # Pre-built HD vector map
-│   │   └── ground_truth/           # Ground truth updated map
-│   └── scene2_restoration/         # Scene 2: Post-construction restoration
-│       ├── infrastructure/
-│       ├── vehicle/
-│       ├── baseline_map/
-│       └── ground_truth/
+├── east_clear/                            # Vehicle-side · clear road
+│   ├── town03_lidar_test_clear.bag        # ROS bag: vehicle LiDAR + camera, 2.21 GB
+│   ├── gt_global.txt                      # Global ground truth trajectory
+│   ├── route1_gt_global.txt               # Route-level ground truth
+│   ├── town03_gt.m                        # MATLAB ground truth helper
+│   ├── route_vehicle_status.csv           # Vehicle status log (per route)
+│   └── vehicle_status.csv                 # Vehicle status log (full session)
+├── east_construction/                     # Vehicle-side · construction scenario
+│   ├── hkstp_east_construction.bag        # ROS bag: vehicle LiDAR + camera, 2.21 GB
+│   ├── gt_global.txt
+│   ├── town03_gt.m
+│   └── vehicle_status.csv
+├── roadside_0923/
+│   ├── data_clear/                        # Roadside · clear road
+│   │   ├── lidar_test_data_with_seg_clear.bag   # ROS bag: roadside LiDAR, 6.48 GB
+│   │   └── config/                        # Sensor and world config files
+│   └── data_with_obs/                     # Roadside · construction scenario
+│       ├── lidar_test_data_with_seg.bag   # ROS bag: roadside LiDAR, 6.49 GB
+│       ├── actor_settings_hksp_with_infr.json
+│       ├── sensor_config_infrastructure.json
+│       ├── sensor_config_template_32line.json
+│       └── world_config_town03_revise_hkstp.json
 └── README.md
 ```
+
+How the folders map to each scenario:
+
+| Folder | S1: Construction | S2: Restoration |
+|--------|-----------------|-----------------|
+| `east_clear` | Vehicle baseline | Vehicle new scan |
+| `east_construction` | Vehicle new scan | Vehicle baseline |
+| `roadside_0923/data_clear` | Roadside baseline | Roadside new scan |
+| `roadside_0923/data_with_obs` | Roadside new scan | Roadside baseline |
+
+> ⚠️ **Scene 2 data will be released in a future update.**
 
 ---
 
@@ -90,6 +114,7 @@ The simulation replicates the **UrbanV2X** sensor platform deployed at the Hong 
 - **Change type:** Bidirectional (additions + deletions)
 - **Description:** Construction elements are removed and original road markings are restored
 - **Task:** Simultaneously detect deleted construction-period boundaries and newly restored markings
+- **Result:** 3D mean Euclidean distance of **15.54 cm**
 
 ---
 
@@ -109,6 +134,54 @@ Please refer to the official UrbanV2X repository for download and usage instruct
 
 ---
 
+## Benchmark Results
+
+| Scenario | \|ΔX\| (cm) | \|ΔY\| (cm) | \|ΔZ\| (cm) | 3D Mean (cm) |
+|----------|-------------|-------------|-------------|--------------|
+| S1: Construction      | 2.61 ± 2.36   | 2.86 ± 3.69   | 1.51 ± 2.12   | **4.07**  |
+| S2: Restoration       | 10.81 ± 7.39  | 5.18 ± 3.62   | 10.07 ± 13.31 | **15.54** |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+```bash
+# Python 3.8+, ROS Noetic recommended
+pip install open3d numpy
+```
+
+### Download
+
+ROS bag files are hosted on Dropbox. **Scene 1** data is currently available; Scene 2 will be released in a future update.
+
+**Scene 1 — Construction Work**
+
+| Folder | Link |
+|--------|------|
+| `east_clear` (vehicle baseline) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/ADD4xqLr306Vho1kG_TQJWo/HKSTP_data/east_clear?rlkey=k5jiool8uhs1lwjgpp66x4do3&dl=0) |
+| `east_construction` (vehicle new scan) |Coming soon |
+| `roadside_0923/data_clear` (roadside baseline) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/ANzVOIm-X24Skz8WH8bzKZU/HKSTP_data/roadside_0923/data_clear?rlkey=k5jiool8uhs1lwjgpp66x4do3&dl=0) |
+| `roadside_0923/data_with_obs` (roadside new scan) |[Download](https://www.dropbox.com/scl/fo/2yt6phd0kxnytoog3hobb/AHo5j5SzHVYLJHjS4y54CIw/HKSTP_data/roadside_0923/data_with_obs?rlkey=k5jiool8uhs1lwjgpp66x4do3&dl=0) |
+
+**Scene 2 — Post-Construction Restoration:** coming soon.
+
+### Usage
+
+Play back ROS bags:
+
+```bash
+# Vehicle-side
+rosbag play east_clear/town03_lidar_test_clear.bag
+rosbag play east_construction/hkstp_east_construction.bag
+
+# Roadside
+rosbag play roadside_0923/data_clear/lidar_test_data_with_seg_clear.bag
+rosbag play roadside_0923/data_with_obs/lidar_test_data_with_seg.bag
+```
+
+Ground truth trajectories are provided in `gt_global.txt` (format: `timestamp x y z qx qy qz qw`).
 
 ---
 
