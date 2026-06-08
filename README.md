@@ -64,7 +64,6 @@ How the folders map to each scenario:
 | `roadside_0923/data_clear` | Roadside baseline | Roadside new scan |
 | `roadside_0923/data_with_obs` | Roadside new scan | Roadside baseline |
 
-
 ---
 
 ## CARLA Sensor Configuration
@@ -90,6 +89,27 @@ The simulation replicates the **UrbanV2X** sensor platform deployed at the Hong 
 | GNSS   | RTK-GPS |
 
 ---
+## Demo Videos
+
+<p align="center">
+  <img src="assets/roadside_con_preview.gif" width="45%" alt="Roadside Construction View"/>
+  <img src="assets/roadside_clean_preview.gif" width="45%" alt="Roadside Clean View"/>
+</p>
+
+<p align="center">
+  <b>Roadside Construction View</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Roadside Clean View</b>
+</p>
+
+<p align="center">
+  Side-by-side visualization of roadside observations under construction and clean conditions.
+</p>
+
+<p align="center">
+  <a href="assets/roadside_con.mp4">View construction video</a> |
+  <a href="assets/roadside_clean.mp4">View clean video</a> |
+  <a href="https://polyu-taslab.github.io/HD_MAP_UPDATE_DATASETS/">View side-by-side demo page</a>
+</p>
 
 ## Scenarios
 
