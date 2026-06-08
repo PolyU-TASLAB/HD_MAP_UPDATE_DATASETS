@@ -186,8 +186,6 @@ Ground truth trajectories are provided in `gt_global.txt` (format: `timestamp x 
 
 ## License
 
-## License
-
 This dataset is released for academic research and non-commercial use.
 
 Unless otherwise specified, the dataset metadata, configuration files, and documentation in this repository are licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
@@ -202,6 +200,15 @@ For commercial inquiries or permission requests, please contact: welson.wen@poly
 
 ## Acknowledgement
 
-This work was supported by the Innovation and Technology Fund under projects "Safety-Certified Multi-Source Fusion Positioning for Autonomous Vehicles in Complex Scenarios (ZPE8)" and "Advanced Smart Mobility Road-Side and Edge System (ART/369CP)".
+This work was supported by the Innovation and Technology Fund under the projects **"Safety-Certified Multi-Source Fusion Positioning for Autonomous Vehicles in Complex Scenarios (ZPE8)"** and **"Advanced Smart Mobility Road-Side and Edge System (ART/369CP)"**.
 
-We thank Ziqi Zhang and Qijun Qin for their generous support in providing experimental data and guidance.
+The authors thank **Ziqi Zhang** and **Qijun Qin** for their generous support in providing experimental data and guidance for the vehicle-infrastructure collaborative mapping experiments.
+
+The HD vector map generation and processing workflow in this project was developed with reference to the open-source HD map construction work by **Runzhi Hu**:
+
+- Runzhi Hu, **HDMap: HD Vector Map Builder**  
+  https://github.com/ebhrz/HDMap
+
+We sincerely thank Runzhi Hu for making the HDMap project publicly available and for providing valuable methodological references for HD vector map generation and urban mapping experiments.
+
+The real-world experiments are related to the **UrbanV2X** dataset collected at the Hong Kong Science and Technology Park. Please refer to the official UrbanV2X website for dataset details and citation information.
