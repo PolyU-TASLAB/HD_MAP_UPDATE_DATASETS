@@ -186,8 +186,17 @@ Ground truth trajectories are provided in `gt_global.txt` (format: `timestamp x 
 
 ## License
 
-This dataset is released under the **GPLv3 License**.  
-For commercial inquiries, please contact: welson.wen@polyu.edu.hk
+## License
+
+This dataset is released for academic research and non-commercial use.
+
+Unless otherwise specified, the dataset metadata, configuration files, and documentation in this repository are licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
+
+You are free to use, share, and adapt the dataset for non-commercial research and educational purposes, provided that proper credit is given to the authors and the related paper is cited.
+
+Commercial use, redistribution for commercial purposes, or deployment in commercial autonomous driving systems is not permitted without prior written permission from PolyU TAS Lab.
+
+For commercial inquiries or permission requests, please contact: welson.wen@polyu.edu.hk
 
 ---
 
