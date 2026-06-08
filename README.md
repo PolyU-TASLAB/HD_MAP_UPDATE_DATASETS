@@ -7,7 +7,7 @@
 This repository provides the CARLA simulation dataset used in the following paper:
 
 > **VLM-Enhanced Vehicle-Infrastructure Collaborative Framework for Incremental HD Map Updating**  
-> Shaoting Qiu, Runzhi Hu, Feng Huang, Weisong Wen, Dongzhe Su, Tacitus Hui, Stella Zhu
+> Shaoting Qiu, Dongzhe Su, Runzhi Hu, Weisong Wen, Tacitus Hui, Stella Zhu, Feng Huang
 
 ---
 
