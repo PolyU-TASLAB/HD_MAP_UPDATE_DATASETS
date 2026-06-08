@@ -204,7 +204,7 @@ This work was supported by the Innovation and Technology Fund under the projects
 
 The authors thank **Ziqi Zhang** and **Qijun Qin** for their generous support in providing experimental data and guidance for the vehicle-infrastructure collaborative mapping experiments.
 
-The HD vector map generation and processing workflow in this project was developed with reference to the open-source HD map construction work by **Runzhi Hu**:
+The HD vector map generation workflow in this project was developed with reference to the open-source HD map construction work by **Runzhi Hu**:
 
 - Runzhi Hu, **HDMap: HD Vector Map Builder**  
   https://github.com/ebhrz/HDMap
