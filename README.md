@@ -91,15 +91,24 @@ The simulation replicates the **UrbanV2X** sensor platform deployed at the Hong 
 ---
 ## Demo Videos
 
-<p align="center">
-  <img src="assets/roadside_con_preview.gif" width="45%" alt="Roadside Construction View"/>
-  <img src="assets/roadside_clean_preview.gif" width="45%" alt="Roadside Clean View"/>
-</p>
-
-<p align="center">
-  <b>Roadside Construction View</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Roadside Clean View</b>
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/roadside_con_preview.gif" width="100%" alt="Roadside Construction View"/>
+      <br>
+      <b>Roadside Construction View</b>
+      <br>
+      <span>Roadside view with temporary construction-related changes.</span>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/roadside_clean_preview.gif" width="100%" alt="Roadside Clean View"/>
+      <br>
+      <b>Roadside Clean View</b>
+      <br>
+      <span>Roadside view under clean road conditions.</span>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   Side-by-side visualization of roadside observations under construction and clean conditions.
